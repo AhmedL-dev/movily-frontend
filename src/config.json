@@ -1,7 +1,7 @@
 {
-  "apiEndpoint": "http://localhost:3002/api/",
-  "authEndpoint": "http://localhost:3002/api/auth/",
-  "userEndpoint": "http://localhost:3002/api/users/",
-  "movieEndpoint": "http://localhost:3002/api/movies/",
-  "genreEndpoint": "http://localhost:3002/api/genres/"
+  "apiEndpoint": "https://infinite-basin-58466.herokuapp.com/api/",
+  "authEndpoint": "https://infinite-basin-58466.herokuapp.com/api/auth/",
+  "userEndpoint": "https://infinite-basin-58466.herokuapp.com/api/users/",
+  "movieEndpoint": "https://infinite-basin-58466.herokuapp.com/api/movies/",
+  "genreEndpoint": "https://infinite-basin-58466.herokuapp.com/api/genres/"
 }

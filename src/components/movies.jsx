@@ -24,14 +24,25 @@ class Movies extends Component {
     searchQuery: "",
   };
 
+  constructor(props) {
+    super(props);
+    this._isMounted = false;
+  }
+
   async componentDidMount() {
+    this._isMounted = true;
     const genres = [{ _id: 0, name: "All Genres" }, ...(await getGenres())];
 
-    const movies = await getMovies();
-    this.setState({
-      movies: movies,
-      genres: genres,
-    });
+    const movies = this._isMounted && (await getMovies());
+    if (this._isMounted)
+      this.setState({
+        movies: movies,
+        genres: genres,
+      });
+  }
+
+  componentWillUnmount() {
+    this._isMounted = false;
   }
 
   handleDelete = async (id) => {
