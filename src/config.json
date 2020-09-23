@@ -1,4 +1,9 @@
 {
+  "apiEndpointx": "http://localhost:3000/api/",
+  "authEndpointx": "http://localhost:3000/api/auth/",
+  "userEndpointx": "http://localhost:3000/api/users/",
+  "movieEndpointx": "http://localhost:3000/api/movies/",
+  "genreEndpointx": "http://localhost:3000/api/genres/",
   "apiEndpoint": "https://infinite-basin-58466.herokuapp.com/api/",
   "authEndpoint": "https://infinite-basin-58466.herokuapp.com/api/auth/",
   "userEndpoint": "https://infinite-basin-58466.herokuapp.com/api/users/",
